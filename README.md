@@ -1,2 +1,2 @@
-# tinify
-A simple URL shortner
+# Tinify
+Tinify is a simple PHP URL shortner web application
