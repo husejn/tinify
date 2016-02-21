@@ -4,8 +4,10 @@
 
 	require_once($config['db_connect']);
 	require_once($config['short']);
-	$request_code = $_GET['url_id'];
 	$statistic_request = false;
+	$uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+	$request_code = str_replace('/','',$uri_parts[0]);
+
 	if(endsWith($request_code, '+')){
 		$statistic_request = true;
 		$request_code = substr($request_code, 0, -1);
