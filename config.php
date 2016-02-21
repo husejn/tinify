@@ -7,23 +7,27 @@
 
 
 /** Included files location */
+$document_root = $_SERVER['DOCUMENT_ROOT'];
+
+/** Included files location */
 $config = array(
-	"head" => "/usr/share/nginx/html/head.php",
-	"header" => "/usr/share/nginx/html/header.php",
-	"footer" => "/usr/share/nginx/html/footer.php",
-	"db_connect" => "/usr/share/nginx/html/db_connect.php",
-	"signup" => "/usr/share/nginx/html/signup/signup.php",
-	"update" => "/usr/share/nginx/html/account/update/update.php",
-	"updatepassword" => "/usr/share/nginx/html/account/update-password/update-password.php",		
-	"session" => "/usr/share/nginx/html/login/session.php",
-	"login" => "/usr/share/nginx/html/login/login.php",
-	"contact" => "/usr/share/nginx/html/contact/contact.php",
-	"short" => "/usr/share/nginx/html/api/short.php",
-	"urldata" => "/usr/share/nginx/html/urls/urldata.php",
-	"statistics" => "/usr/share/nginx/html/urls/statistics.php",
-	"recent_urls" => "/usr/share/nginx/html/recent_urls.php"
+	"head" => "$document_root/head.php",
+	"header" => "$document_root/header.php",
+	"footer" => "$document_root/footer.php",
+	"db_connect" => "$document_root/db_connect.php",
+	"signup" => "$document_root/signup/signup.php",
+	"update" => "$document_root/account/update/update.php",
+	"updatepassword" => "$document_root/account/update-password/update-password.php",		
+	"session" => "$document_root/login/session.php",
+	"login" => "$document_root/login/login.php",
+	"contact" => "$document_root/contact/contact.php",
+	"short" => "$document_root/api/short.php",
+	"urldata" => "$document_root/urls/urldata.php",
+	"statistics" => "$document_root/urls/statistics.php",
+	"recent_urls" => "$document_root/recent_urls.php"
 
 	);
+
 
 
 /** Enter your website name
