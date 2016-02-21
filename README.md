@@ -12,7 +12,7 @@ To install and run follow these simple steps
 2. Edit file `config.php` with the correct data
 3. From the DATABASE directory import the data to MySQL. Start with `tinify.sql` and then import `ip2nation.sql`
 4. The application should be ready to run, however to be able to redirect using `/abc` you need to configure rewrite on your web server. For nginx see Rewrite Rules below.
-5. Make other changes such if necessary.
+5. Make other changes if necessary.
 
 #####Rewrite Rules
 This is an example for nginx, if you are running Apache or something else please refer to the documentation 
