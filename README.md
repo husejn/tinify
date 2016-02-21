@@ -23,11 +23,13 @@ map $uri $rewrite {
   "~*(\.)"                                        0;
   default                                         1;
 }
-
-location / {
-  try_files $uri $uri/ =404;
-  if ($rewrite = 1){
-    rewrite ^/(.*)$ /redirect.php?url_id=$1 last;
+server{
+  ...
+  location / {
+    try_files $uri $uri/ =404;
+    if ($rewrite = 1){
+      rewrite ^/(.*)$ /redirect.php?url_id=$1 last;
+    }
   }
 }
 ```
